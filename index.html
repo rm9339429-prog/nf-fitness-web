@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NF Entrenamiento Fitness | Monte Grande</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Banner Dinámico (Se muestra solo en fechas especiales de forma automática) -->
+    <div id="banner-festivo" class="banner-festivo" style="display: none;"></div>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="contenedor nav-flex">
+            <div class="marca">
+                <img src="IMAGEN/ft.png" alt="Logo NF" class="logo-nav">
+                <span>NF FITNESS</span>
+            </div>
+            <div class="nav-links">
+                <a href="#disciplinas">Disciplinas</a>
+                <a href="#humor">Comunidad</a>
+                <a href="#videos">Videos</a>
+                <a href="#ubicacion">Ubicación</a>
+                <a href="https://www.instagram.com/entrenamientofitnessnf/" target="_blank" rel="noopener noreferrer" class="btn-insta-nav">Instagram</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Principal (Hero con la nueva imagen de fondo) -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="contenedor hero-contenido">
+            <img src="IMAGEN/ft.png" alt="Logo Entrenamiento Fitness NF" class="logo-hero">
+            <h1>SUPERÁ TUS LÍMITES CON <span id="acento-titulo">NF</span></h1>
+            <p>Funcional • Musculación • Woman Fitness • Boxeo • Personalizados en Monte Grande.</p>
+            <p class="frase-hero">"No te quedes atrás... ¡vení a entrenar con todo!" 💪🔥</p>
+            <div class="botones-hero">
+                <a href="https://www.instagram.com/entrenamientofitnessnf/" target="_blank" rel="noopener noreferrer" class="btn-principal">
+                    Seguinos en @entrenamientofitnessnf
+                </a>
+                <a href="#ubicacion" class="btn-secundario">Cómo Llegar</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de Disciplinas -->
+    <section id="disciplinas" class="seccion-disciplinas">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">NUESTRAS DISCIPLINAS</h2>
+            <p class="subtitulo-seccion">Entrenamientos diseñados para todos los niveles y objetivos.</p>
+
+            <div class="grid-disciplinas">
+                <div class="card-disciplina">
+                    <h3>Funcional</h3>
+                    <p>Circuitos dinámicos para mejorar fuerza, resistencia, agilidad y capacidad cardiovascular.</p>
+                </div>
+                <div class="card-disciplina">
+                    <h3>Musculación</h3>
+                    <p>Trabajo enfocado en hipertrofia, fuerza máxima y acondicionamiento físico general.</p>
+                </div>
+                <div class="card-disciplina">
+                    <h3>Woman Fitness</h3>
+                    <p>Clases especialmente planificadas para tonificación, resistencia y bienestar integral.</p>
+                </div>
+                <div class="card-disciplina">
+                    <h3>Boxeo</h3>
+                    <p>Técnica, coordinación, descarga de energía y entrenamiento físico de alto rendimiento.</p>
+                </div>
+                <div class="card-disciplina">
+                    <h3>Personalizados</h3>
+                    <p>Planificación individualizada y seguimiento constante según tus metas personales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Humor y Comunidad -->
+    <section id="humor" class="seccion-humor">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">¡EL HUMOR Y LA GARRA NO SE NEGOCIAN!</h2>
+            <p class="subtitulo-seccion">Acá entrenamos en serio, pero la buena onda en el grupo y la comunidad son lo primero.</p>
+            
+            <div class="grid-humor">
+                <div class="card-humor custom-bg-gato-fuerte">
+                    <div class="humor-overlay"></div>
+                    <div class="humor-info">
+                        <h3>VOS DESPUÉS DE UN MES EN NF</h3>
+                        <p>No hay excusas para no darlo todo. El progreso se nota con constancia y un equipo que te banca.</p>
+                    </div>
+                </div>
+
+                <div class="card-humor custom-bg-gato-entrenando">
+                    <div class="humor-overlay"></div>
+                    <div class="humor-info">
+                        <h3>METIDO EN LA ZONA</h3>
+                        <p>Música al mango, la planificación del día y toda la energía puesta en superar tus propios récords.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Videos de Instagram (Optimizada con loading="lazy") -->
+    <section id="videos" class="seccion-videos">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">ENTRENANDO EN ACCIÓN</h2>
+            <p class="subtitulo-seccion">Mirá nuestros reels y publicaciones directo desde nuestro Instagram oficial.</p>
+
+            <div class="grid-videos">
+                <div class="video-card">
+                    <iframe 
+                        src="https://www.instagram.com/reel/DdTptVkuDrY/embed" 
+                        frameborder="0" 
+                        scrolling="no" 
+                        allowtransparency="true" 
+                        allowfullscreen="true"
+                        loading="lazy">
+                    </iframe>
+                </div>
+
+                <div class="video-card">
+                    <iframe 
+                        src="https://www.instagram.com/entrenamientofitnessnf/embed" 
+                        frameborder="0" 
+                        scrolling="no" 
+                        allowtransparency="true" 
+                        allowfullscreen="true"
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Ubicación -->
+    <section id="ubicacion" class="seccion-ubicacion">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">¿DÓNDE ENTRENAMOS?</h2>
+            <p class="subtitulo-seccion">Acercate a entrenar con nosotros en Monte Grande.</p>
+
+            <div class="caja-ubicacion">
+                <div class="info-contacto">
+                    <div class="titulo-pin">
+                        <img src="IMAGEN/geo-location-pin-vector-icon.webp" alt="Pin de Ubicación" class="icono-pin">
+                        <h3>Ubicación Oficial</h3>
+                    </div>
+                    <p class="direccion">Eduardo Arana 807, B1842 Monte Grande</p>
+                    <p class="provincia">Provincia de Buenos Aires, Argentina</p>
+                    <p class="detalle-zona">Cualquier duda o consulta sobre horarios y aranceles, escribinos por mensaje directo en Instagram.</p>
+                    
+                    <div class="botones-ubicacion">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Eduardo+Arana+807,+B1842+Monte+Grande,+Provincia+de+Buenos+Aires" target="_blank" rel="noopener noreferrer" class="btn-principal">
+                            Abrir en Google Maps
+                        </a>
+                        <a href="https://www.instagram.com/entrenamientofitnessnf/" target="_blank" rel="noopener noreferrer" class="btn-secundario">
+                            Consultar por MD
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mapa-contenedor">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=Eduardo%20Arana%20807,%20B1842%20Monte%20Grande,%20Provincia%20de%20Buenos%20Aires&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="330" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="contenedor">
+            <img src="IMAGEN/ft.png" alt="Logo NF" class="logo-footer">
+            <p><strong>NF Entrenamiento Fitness</strong></p>
+            <p class="arroba">Eduardo Arana 807, Monte Grande • @entrenamientofitnessnf</p>
+            <p class="copy">© 2026 Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script automático ultra liviano para detectar Halloween, Navidad y Año Nuevo -->
+    <script>
+        (function() {
+            const hoy = new Date();
+            const mes = hoy.getMonth() + 1; // 10 = Octubre, 12 = Diciembre, 1 = Enero
+            const dia = hoy.getDate();
+            const body = document.body;
+            const banner = document.getElementById('banner-festivo');
+
+            // 1. Halloween (Todo Octubre)
+            if (mes === 10) {
+                body.classList.add('tema-halloween');
+                banner.style.display = 'block';
+                banner.innerHTML = '🎃 <strong>ESPECIAL HALLOWEEN EN NF:</strong> ¡Entrenamientos intensos que dan miedo! 👻';
+            } 
+            // 2. Navidad (1 al 25 de Diciembre)
+            else if (mes === 12 && dia <= 25) {
+                body.classList.add('tema-navidad');
+                banner.style.display = 'block';
+                banner.innerHTML = '🎄 <strong>¡FELIZ NAVIDAD DE PARTE DE NF FITNESS!</strong> Cerrá el año entrenando con todo 🎅💪';
+            } 
+            // 3. Año Nuevo (26 de Diciembre al 6 de Enero)
+            else if ((mes === 12 && dia >= 26) || (mes === 1 && dia <= 6)) {
+                body.classList.add('tema-anionuevo');
+                banner.style.display = 'block';
+                banner.innerHTML = '✨ <strong>¡FELIZ AÑO NUEVO!</strong> Arrancá el año cumpliendo tus metas en NF Fitness 🥂🔥';
+            }
+        })();
+    </script>
+
+</body>
+</html>

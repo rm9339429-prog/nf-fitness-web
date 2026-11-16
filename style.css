@@ -1,0 +1,465 @@
+/* Variables de color (por defecto: Blanco y Negro clásico) */
+:root {
+    --color-acento: #ffffff;
+    --color-texto-acento: #000000;
+    --color-borde-hover: #ffffff;
+}
+
+/* Temática Halloween (Octubre) */
+body.tema-halloween {
+    --color-acento: #ff6b00;
+    --color-texto-acento: #000000;
+    --color-borde-hover: #ff6b00;
+}
+
+/* Temática Navidad (1 al 25 de Diciembre) */
+body.tema-navidad {
+    --color-acento: #d92626;
+    --color-texto-acento: #ffffff;
+    --color-borde-hover: #1e824c;
+}
+
+/* Temática Año Nuevo (26 Dic al 6 Ene) */
+body.tema-anionuevo {
+    --color-acento: #f1c40f;
+    --color-texto-acento: #000000;
+    --color-borde-hover: #f1c40f;
+}
+
+/* Reseteo y Estilos Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000;
+    color: #f5f5f5;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3, .marca span {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Banner Festivo Superior */
+.banner-festivo {
+    background-color: var(--color-acento);
+    color: var(--color-texto-acento);
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #0a0a0a;
+    border-bottom: 1px solid #222;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.logo-nav {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a:not(.btn-insta-nav) {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.nav-links a:not(.btn-insta-nav):hover {
+    color: var(--color-acento);
+}
+
+.btn-insta-nav {
+    background-color: var(--color-acento);
+    color: var(--color-texto-acento);
+    text-decoration: none;
+    padding: 8px 16px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    border-radius: 4px;
+}
+
+/* Hero Section: Logo y textos corridos hacia la izquierda para ver la cara */
+.hero {
+    position: relative;
+    background-image: url('IMAGEN/Gemini_Generated_Image_cu0u6mcu0u6mcu0u.jpg');
+    background-size: cover;
+    background-position: 80% center; /* Mueve la foto a la derecha para enfocar la cara */
+    padding: 100px 20px 120px;
+    border-bottom: 1px solid #1f1f1f;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.92) 50%, rgba(0, 0, 0, 0.6) 100%);
+    z-index: 1;
+}
+
+.hero-contenido {
+    position: relative;
+    z-index: 2;
+    max-width: 550px;
+    margin-left: 5%; /* Corrige todo el contenido hacia la izquierda */
+    text-align: left; /* Alinea los textos a la izquierda para un diseño más moderno */
+}
+
+.logo-hero {
+    width: 170px;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.hero h1 span {
+    color: var(--color-acento);
+    border-bottom: 3px solid var(--color-acento);
+}
+
+.hero p {
+    margin: 0 0 15px 0;
+    color: #cccccc;
+    font-size: 1.05rem;
+}
+
+.frase-hero {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    font-style: italic;
+    margin-bottom: 30px !important;
+}
+
+.botones-hero {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-principal {
+    background-color: var(--color-acento);
+    color: var(--color-texto-acento);
+    text-decoration: none;
+    padding: 13px 26px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.btn-secundario {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid var(--color-acento);
+    text-decoration: none;
+    padding: 11px 24px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+/* Sección Disciplinas */
+.seccion-disciplinas {
+    padding: 70px 0;
+    background-color: #080808;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.titulo-seccion {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.subtitulo-seccion {
+    text-align: center;
+    color: #999999;
+    margin-bottom: 40px;
+}
+
+.grid-disciplinas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card-disciplina {
+    background-color: #111111;
+    border: 1px solid #262626;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.card-disciplina:hover {
+    border-color: var(--color-borde-hover);
+}
+
+.card-disciplina h3 {
+    font-size: 1.4rem;
+    color: var(--color-acento);
+    margin-bottom: 10px;
+}
+
+.card-disciplina p {
+    color: #a3a3a3;
+    font-size: 0.95rem;
+}
+
+/* Sección de Humor y Comunidad */
+.seccion-humor {
+    padding: 70px 0;
+    background-color: #030303;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.grid-humor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 25px;
+}
+
+.card-humor {
+    position: relative;
+    height: 360px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #262626;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-humor:hover {
+    border-color: var(--color-borde-hover);
+}
+
+.custom-bg-gato-fuerte {
+    background-image: url('IMAGEN/4bf31bbf7ebc23b73ac87a8e97d54a07.jpg');
+}
+
+.custom-bg-gato-entrenando {
+    background-image: url('IMAGEN/197eb7c956fe5566f7ccf60e4f0a3b5c.jpg');
+}
+
+.humor-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.95) 35%, rgba(0,0,0,0.25));
+    z-index: 1;
+}
+
+.humor-info {
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+}
+
+.humor-info h3 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.humor-info p {
+    font-size: 0.95rem;
+    color: #d1d1d1;
+}
+
+/* Sección Videos Instagram */
+.seccion-videos {
+    padding: 70px 0;
+    background-color: #050505;
+}
+
+.grid-videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    justify-items: center;
+}
+
+.video-card {
+    width: 100%;
+    max-width: 400px;
+    background-color: #111111;
+    border: 1px solid #262626;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 460px;
+    display: block;
+}
+
+/* Sección Ubicación */
+.seccion-ubicacion {
+    padding: 70px 0;
+    background-color: #0b0b0b;
+    border-top: 1px solid #1a1a1a;
+}
+
+.caja-ubicacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    background-color: #121212;
+    border: 1px solid #262626;
+    border-radius: 12px;
+    padding: 35px;
+    align-items: center;
+}
+
+.titulo-pin {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.icono-pin {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+    filter: invert(1);
+}
+
+.titulo-pin h3 {
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+.direccion {
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.provincia {
+    font-size: 1rem;
+    color: #cccccc;
+    margin-bottom: 15px;
+}
+
+.detalle-zona {
+    color: #999999;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+}
+
+.botones-ubicacion {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.mapa-contenedor {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #2a2a2a;
+}
+
+/* Footer */
+.footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #1f1f1f;
+}
+
+.logo-footer {
+    width: 65px;
+    margin-bottom: 10px;
+}
+
+.arroba {
+    color: #a3a3a3;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.copy {
+    color: #555555;
+    font-size: 0.8rem;
+}
+
+/* Responsivo para celulares */
+@media (max-width: 768px) {
+    .hero-contenido {
+        margin-left: 0;
+        text-align: center;
+    }
+    .botones-hero {
+        justify-content: center;
+    }
+    .caja-ubicacion {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    .nav-links a:not(.btn-insta-nav) {
+        display: none;
+    }
+}
